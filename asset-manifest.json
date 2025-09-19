@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tab-asambleas-reg/static/css/main.bf2b43f2.css",
+    "main.js": "/tab-asambleas-reg/static/js/main.9c45f997.js",
+    "static/js/453.0e79d835.chunk.js": "/tab-asambleas-reg/static/js/453.0e79d835.chunk.js",
+    "index.html": "/tab-asambleas-reg/index.html",
+    "main.bf2b43f2.css.map": "/tab-asambleas-reg/static/css/main.bf2b43f2.css.map",
+    "main.9c45f997.js.map": "/tab-asambleas-reg/static/js/main.9c45f997.js.map",
+    "453.0e79d835.chunk.js.map": "/tab-asambleas-reg/static/js/453.0e79d835.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf2b43f2.css",
+    "static/js/main.9c45f997.js"
+  ]
+}
