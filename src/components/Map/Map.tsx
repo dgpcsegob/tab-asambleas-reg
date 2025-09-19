@@ -159,7 +159,7 @@ const Map: React.FC<MapProps> = ({ layersVisibility }) => {
         map.getCanvas().style.cursor = 'pointer';
         const props = e.features[0].properties;
         if (props) {
-            popup.setLngLat(e.lngLat).setHTML(`<strong>Sede:</strong> ${props.Sede || 'N/A'}<br/><strong>Pueblo:</strong> ${props.Pueblo || 'N/A'}`).addTo(map);
+            popup.setLngLat(e.lngLat).setHTML(`<strong>Sede:</strong> ${props.Sede || 'N/A'}<br/><strong>Pueblo:</strong> ${props.Pueblo || 'N/A'}<br/><strong>Responsable:</strong> ${props.Responsable || 'N/A'}`).addTo(map);
         }
       });
       map.on('mouseleave', `puntos_${zona}`, () => {
