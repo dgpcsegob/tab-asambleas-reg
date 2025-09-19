@@ -5,13 +5,13 @@ import './App.css';
 
 const App: React.FC = () => {
   const [layersVisibility, setLayersVisibility] = useState<Record<string, boolean>>({
-    puntos_zona1: true,
-    puntos_zona2: true,
+    puntos_zona1: false,
+    puntos_zona2: false,
     mesas_cercanas_zona1: false,
     mesas_cercanas_zona2: false,
     regiones_zona1: false,
     regiones_zona2: false,
-    LocalidadesSedeINPI: true,
+    LocalidadesSedeINPI: false,
     PresidenciasMunicipales: false,
     PuntosWiFiCFE_4G: false,
     PuntosWiFiCFE_FIBRA: false,
@@ -29,17 +29,17 @@ const App: React.FC = () => {
     {
       title: 'Zona 1',
       items: [
-        { id: 'puntos_zona1', label: 'Asambleas Regionales Zona 1', color: '#e60026', shape: 'circle', switch: true, checked: layersVisibility['puntos_zona1'] },
-        { id: 'mesas_cercanas_zona1', label: 'Mesas de Paz Zona 1', color: '#f8e71c', shape: 'square', switch: true, checked: layersVisibility['mesas_cercanas_zona1'] },
-        { id: 'regiones_zona1', label: 'Regiones Zona 1', color: '#66c2a5', shape: 'square', switch: true, checked: layersVisibility['regiones_zona1'] },
+        { id: 'puntos_zona1', label: 'Asambleas Regionales', color: '#e60026', shape: 'circle', switch: true, checked: layersVisibility['puntos_zona1'] },
+        { id: 'mesas_cercanas_zona1', label: 'Mesas de Paz', color: '#f8e71c', shape: 'square', switch: true, checked: layersVisibility['mesas_cercanas_zona1'] },
+        { id: 'regiones_zona1', label: 'Regiones', color: '#66c2a5', shape: 'square', switch: true, checked: layersVisibility['regiones_zona1'] },
       ],
     },
     {
       title: 'Zona 2',
       items: [
-        { id: 'puntos_zona2', label: 'Asambleas Regionales Zona 2', color: '#e60026', shape: 'circle', switch: true, checked: layersVisibility['puntos_zona2'] },
-        { id: 'mesas_cercanas_zona2', label: 'Mesas de Paz Zona 2', color: '#f8e71c', shape: 'square', switch: true, checked: layersVisibility['mesas_cercanas_zona2'] },
-        { id: 'regiones_zona2', label: 'Regiones Zona 2', color: '#fc8d62', shape: 'square', switch: true, checked: layersVisibility['regiones_zona2'] },
+        { id: 'puntos_zona2', label: 'Asambleas Regionales', color: '#e60026', shape: 'circle', switch: true, checked: layersVisibility['puntos_zona2'] },
+        { id: 'mesas_cercanas_zona2', label: 'Mesas de Paz', color: '#f8e71c', shape: 'square', switch: true, checked: layersVisibility['mesas_cercanas_zona2'] },
+        { id: 'regiones_zona2', label: 'Regiones', color: '#fc8d62', shape: 'square', switch: true, checked: layersVisibility['regiones_zona2'] },
       ],
     },
     {
@@ -68,7 +68,6 @@ const App: React.FC = () => {
     <div className="App">
       <InfoBox
         title="Mapa de Asambleas Regionales de Consulta"
-        subtitle="Capas disponibles por zona"
         sections={sections}
         onToggle={handleToggle}
       />
